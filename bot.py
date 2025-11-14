@@ -5,7 +5,6 @@ import os
 import telebot
 
 # WARNING: keeping tokens in source control is insecure; environment variables are preferred.
-BOT_TOKEN = "8207707178:AAHjSO25tl9QHbm45gBChbmFCYYidl4ZInk"
 if not BOT_TOKEN or BOT_TOKEN.startswith("8207707178") and len(BOT_TOKEN) < 40:
     raise RuntimeError("Provide a valid Telegram bot token before running the bot.")
 
