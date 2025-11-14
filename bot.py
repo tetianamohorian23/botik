@@ -25,5 +25,5 @@ def handle_start(message: telebot.types.Message) -> None:
 
 
 if __name__ == "__main__":
-    # infinity_polling keeps reconnecting automatically when Telegram drops the link.
-    bot.infinity_polling(skip_pending=True)
+    # polling with none_stop=True keeps the bot alive on hosts like Railway.
+    bot.polling(none_stop=True, interval=0, timeout=60)
